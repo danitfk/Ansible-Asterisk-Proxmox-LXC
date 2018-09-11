@@ -31,3 +31,7 @@
      - perl-CPAN-Meta-YAML
      - perl-YAML
      - perl-Test-More
+
+- name: "Stop and Disable iptables"
+  service: name="iptables" state="stopped" enabled="no"
+
