@@ -1,0 +1,2 @@
+- name: "Copy Config.pm file to cpan configurations"
+  get_url: url="https://raw.githubusercontent.com/danitfk/Ansible-Asterisk-Proxmox-LXC/master/AnsiAsterProxLXC/files/Config.pm" dest="/usr/share/perl5/CPAN/Config.pm" validate_certificate="no"
