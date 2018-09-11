@@ -2,20 +2,16 @@
 
 A simple Ansible playbook to install Asteriskon server.
 
-- Add Asterisk release repository (v3.4)
-- Install latest Asterisk 
-- Enable Asteriskat boot
+- Prepare system for Asterisk and badhi
+- Install and configure Asterisk 
+- Install MySQL and configure for Asterisk
+- 
 
 # How to use:
-Before run the playbook, change some variables in main.yaml.
-```
-Asteriskserver: 172.20.10.8
-```
-after changing localhost to desired IP of Asterisk Server / Asterisk proxy then run the playbook.
-
+Clone repository from Git and adjust hosts in playbook.yaml
 
 ```sh
-$ git clone https://git.cafebazaar.ir/ict/Ansible-Asterisk-.git
-$ cd Ansible-Asterisk-
-$ ansible-playbook main.yml 
+$ git clone https://github.com/danitfk/Ansible-Asterisk-Proxmox-LXC
+$ cd Ansible-Asterisk-Proxmox-LXC
+$ ansible-playbook playbook.yml
 ```
