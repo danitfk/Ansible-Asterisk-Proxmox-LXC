@@ -1,0 +1,14 @@
+- name: "Install Asterisk"
+  yum:
+    name: "{{ packages }}"
+    state: latest
+  vars:
+    packages:
+    - asterisk 
+    - asterisk-mysql 
+    - asterisk-dahdi
+    - dahdi
+
+- name: "Enable Asterisk at boot"
+  service: name="asterisk" enabled="yes"
+

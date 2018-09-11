@@ -1,0 +1,7 @@
+---
+- include: check-system.yml
+- include: prepration.yml
+- include: astresik.yml
+- include: perl-cpan.yml
+- include: mysql.yml
+- include: configuration.yml

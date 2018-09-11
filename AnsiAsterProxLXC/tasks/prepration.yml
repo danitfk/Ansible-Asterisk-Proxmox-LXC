@@ -1,0 +1,33 @@
+- name: "Add EPEL Repository to YUM"
+  yum: name="epel-release" state="latest"
+- name: Upgrade OS and packages to latest version
+  yum: name="*" state="latest"
+
+- name: "Install Development Packages"
+  yum:  name="@Development Tools" state="present"
+  
+- name: "Install Necassary packages to compile Asterisk and Trunk2"
+  yum: 
+    name: "{{ packages }}"
+    state: latest
+  vars:
+    packages:
+     - gcc
+     - gcc-c++
+     - openssl-devel
+     - zlib-devel
+     - bison
+     - autoconf
+     - automake
+     - make
+     - readline-devel
+     - ncurses-devel
+     - mysql-devel
+     - vim-enhanced
+     - perl-YAML
+     - perl-YAML-Tiny
+     - perl-CPAN
+     - perl-CPANPLUS
+     - perl-CPAN-Meta-YAML
+     - perl-YAML
+     - perl-Test-More

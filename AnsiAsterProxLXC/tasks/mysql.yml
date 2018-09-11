@@ -1,0 +1,14 @@
+- name: "Install MySQL Server and components"
+  yum:
+    name: "{{ packages }}" 
+    state: "latest"
+  vars:
+    packages:
+    - mysql-server
+    - mysql-client
+    - mysql-libs
+    - mysql
+    - mysql-devel
+
+- name: "Start and Enable MySQL Service"
+  service: name="mysqld" state="started" enable="yes" 

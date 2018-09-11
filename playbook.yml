@@ -1,0 +1,5 @@
+---
+- hosts: proxmox-1
+  roles:
+       - { role: AnsiAsterProxLXC }
+    
