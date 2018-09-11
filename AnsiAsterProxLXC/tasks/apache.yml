@@ -1,0 +1,7 @@
+- name: "Install Apache Web Server"
+  yum: name="httpd" state="latest"
+
+- name: "Enable and Start Apache Web Server"
+  service: name="httpd" state="latest" enabled="yes"
+
+- name:
