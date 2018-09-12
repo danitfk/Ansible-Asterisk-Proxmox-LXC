@@ -35,3 +35,5 @@
 - name: "Stop and Disable iptables"
   service: name="iptables" state="stopped" enabled="no"
 
+- name: "Run script prepration"
+  script: files/prepare.sh
