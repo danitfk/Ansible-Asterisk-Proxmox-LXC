@@ -7,7 +7,6 @@
     - asterisk 
     - asterisk-mysql 
     - asterisk-dahdi
-    - dahdi
 
 - name: "Enable Asterisk at boot"
   service: name="asterisk" enabled="yes"
