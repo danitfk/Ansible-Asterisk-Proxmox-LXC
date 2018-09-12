@@ -1,5 +1,4 @@
 ---
-- include: check-system.yml
 - include: prepration.yml
 - include: apache.yml
 - include: astresik.yml
