@@ -4,4 +4,11 @@
 - name: "Enable and Start Apache Web Server"
   service: name="httpd" state="latest" enabled="yes"
 
-- name:
+- name: "Copy Custom Apache config file for Asterisk"
+  get_url:
+    url: "https://raw.githubusercontent.com/danitfk/Ansible-Asterisk-Proxmox-LXC/master/AnsiAsterProxLXC/files/asterisk_httpd.conf"
+    dest: /etc/httpd/conf.d/asterisk.conf
+    chmod: 644
+
+- name: "Reload Apache Web Server"
+  service: name="httpd" state="restarted"
