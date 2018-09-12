@@ -19,7 +19,6 @@
     path: "{{ dirs }}"
     owner: asterisk
     group: asterisk
-    recurse: yes
   vars:
      dirs:
      - /etc/asterisk/
