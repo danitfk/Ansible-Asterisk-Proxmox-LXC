@@ -4,7 +4,9 @@ export PERL_MM_USE_DEFAULT=1
 if [[ -d "/var/www/html/trunk2" ]]
 then
 cd /var/www/html/trunk2
-cp perl_config/Config.pm `find /usr/ -name Config.pm|grep -v CPANPLUS|grep CPAN` -f
+/bin/cp perl_config/Config.pm `find /usr/ -name Config.pm|grep -v CPANPLUS|grep CPAN` -f
+echo "o conf prerequisites_policy follow
+o conf build_requires_install_policy yes
 install CPAN::Meta::Requirements CPAN"|cpan
 echo "$CPAN_TAGS Compress::Zlib Archive::Zip"|cpan 
 echo "$CPAN_TAGS YAML"|cpan
@@ -16,4 +18,5 @@ echo "$CPAN_TAGS POE::Component::Client::Asterisk::Manager Net::Jabber CGI::Uplo
 else
 echo "Directory not found"
 exit 1
+
 fi
