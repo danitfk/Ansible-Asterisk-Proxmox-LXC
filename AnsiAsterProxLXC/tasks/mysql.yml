@@ -5,7 +5,6 @@
   vars:
     packages:
     - mysql-server
-    - mysql-client
     - mysql-libs
     - mysql
     - mysql-devel
