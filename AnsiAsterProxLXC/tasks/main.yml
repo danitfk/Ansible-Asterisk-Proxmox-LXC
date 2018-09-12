@@ -3,5 +3,4 @@
 - include: apache.yml
 - include: astresik.yml
 - include: perl-cpan.yml
-- include: trunk2.yml
 - include: mysql.yml
