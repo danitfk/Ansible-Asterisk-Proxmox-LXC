@@ -8,7 +8,6 @@
   get_url:
     url: "https://raw.githubusercontent.com/danitfk/Ansible-Asterisk-Proxmox-LXC/master/AnsiAsterProxLXC/files/asterisk_httpd.conf"
     dest: /etc/httpd/conf.d/asterisk.conf
-    chmod: 644
 
 - name: "Reload Apache Web Server"
   service: name="httpd" state="restarted"
