@@ -17,12 +17,12 @@
 
 - name: "Set Permission for Asterisk contents"
   file:
-    path: "{{ directories }}"
+    path: "{{ dirs }}"
     owner: asterisk
     group: asterisk
     recurse: yes
-  variables:
-     directories:
+  vars:
+     dirs:
      - /etc/asterisk/
      - /var/log/asterisk/
      - /var/spool/asterisk/
