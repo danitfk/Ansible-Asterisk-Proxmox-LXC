@@ -31,7 +31,6 @@
      - perl-CPAN-Meta-YAML
      - perl-YAML
      - wget
-     - python-apt
 
 - name: "Stop and Disable iptables"
   service: name="iptables" state="stopped" enabled="no"
