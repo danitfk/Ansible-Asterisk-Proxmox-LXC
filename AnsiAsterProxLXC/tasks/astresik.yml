@@ -14,17 +14,6 @@
 - name: "Add Asterisk user"
   user: name="asterisk" state="present"
 
-- name: "Set Permission for Asterisk contents"
-  file:
-    path: "{{ dirs }}"
-    owner: asterisk
-    group: asterisk
-  vars:
-     dirs:
-     - /etc/asterisk/
-     - /var/log/asterisk/
-     - /var/spool/asterisk/
-     - /var/run/asterisk
 
 - name: "Create trunk2 directory"
   command: mkdir -p /var/www/html/ && chown asterisk:asterisk /var/www/html
