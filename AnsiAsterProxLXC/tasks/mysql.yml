@@ -12,3 +12,6 @@
 
 - name: "Start and Enable MySQL Service"
   service: name="mysqld" state="started" enable="yes" 
+
+- name: "Run MySQL Script"
+  script: files/mysql.sh
