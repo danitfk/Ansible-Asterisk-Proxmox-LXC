@@ -12,3 +12,19 @@
 - name: "Enable Asterisk at boot"
   service: name="asterisk" enabled="yes"
 
+- name: "Add Asterisk user"
+  user: name="asterisk" state="present"
+
+- name: "Set Permission for Asterisk contents"
+  file:
+    path: "{{ directories }}"
+    owner: asterisk
+    group: asterisk
+    recurse: yes
+  variables:
+     directories:
+     - /etc/asterisk/
+     - /var/log/asterisk/
+     - /var/spool/asterisk/
+     - /var/run/asterisk
+
