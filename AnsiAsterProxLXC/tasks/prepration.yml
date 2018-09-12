@@ -24,6 +24,12 @@
      - ncurses-devel
      - mysql-devel
      - vim-enhanced
+     - perl-FCGI
+     - perl-CGI-Session
+     - php
+     - php-gd
+     - php-pear
+     - php-mysql
      - perl-YAML
      - perl-YAML-Tiny
      - perl-CPAN
