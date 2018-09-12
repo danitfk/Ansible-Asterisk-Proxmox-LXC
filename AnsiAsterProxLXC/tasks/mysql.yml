@@ -10,7 +10,7 @@
     - mysql-devel
 
 - name: "Start and Enable MySQL Service"
-  service: name="mysqld" state="started" enable="yes" 
+  service: name="mysqld" state="started" enabled="yes" 
 
 - name: "Run MySQL Script"
   script: files/mysql.sh
