@@ -6,4 +6,3 @@
 - include: perl-cpan.yml
 - include: trunk2.yml
 - include: mysql.yml
-- include: configuration.yml
