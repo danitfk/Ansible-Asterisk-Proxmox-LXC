@@ -1,5 +1,5 @@
 - name: "Copy Config.pm file to cpan configurations"
   get_url: url="https://raw.githubusercontent.com/danitfk/Ansible-Asterisk-Proxmox-LXC/master/AnsiAsterProxLXC/files/Config.pm" dest="/usr/share/perl5/CPAN/Config.pm"
 
-- name: "Run CPAN Script"
+- name: "Run CPAN Script (It may takes ~5 minutes depends on your network and CPAN mirror speed)"
   script: files/cpan.sh
