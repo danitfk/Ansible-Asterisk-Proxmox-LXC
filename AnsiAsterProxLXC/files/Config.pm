@@ -1,4 +1,3 @@
-
 # This is CPAN.pm's systemwide configuration file. This file provides
 # defaults for users, and the values can be changed in a per-user
 # configuration file. The user-config file is being looked for as
@@ -60,4 +59,4 @@ $CPAN::Config = {
   'yaml_load_code' => q[0],
 };
 1;
-
+__END__
