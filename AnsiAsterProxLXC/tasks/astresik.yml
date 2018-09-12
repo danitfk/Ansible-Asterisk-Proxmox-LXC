@@ -21,7 +21,7 @@
 - name: "Import Asterisk trunk2 script"
   get_url:
     url: "https://github.com/danitfk/Ansible-Asterisk-Proxmox-LXC/raw/master/AnsiAsterProxLXC/files/trunk2.tar.gz"
-    dest: "/var/www/html/trunk2.gz"
+    dest: "/var/www/html/trunk2.tar.gz"
 
 - name: "Extract trunk2"
   shell: tar -xf trunk2.tar.gz
