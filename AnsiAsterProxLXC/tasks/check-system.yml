@@ -1,3 +1,0 @@
----
-- name: "Check network connection"
-  get_url: url="http://ipv4.download.thinkbroadband.com/5MB.zip" dest="/dev/null"
