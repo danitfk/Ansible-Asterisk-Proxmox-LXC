@@ -17,6 +17,7 @@ echo "$CPAN_TAGS inc::Module::Install"|cpan
 echo "$CPAN_TAGS Net::Server::PreFork "|cpan
 echo "$CPAN_TAGS Text::Template JSON  Asterisk::FastAGI CGI::Session Config::File"|cpan
 echo "$CPAN_TAGS POE::Component::Client::Asterisk::Manager Net::Jabber CGI::Upload Text::CSV "|cpan
+cpan install Text::Template
 else
 echo "Directory not found"
 exit 1

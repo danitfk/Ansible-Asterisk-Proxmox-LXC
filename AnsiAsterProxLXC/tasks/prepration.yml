@@ -36,6 +36,7 @@
      - perl-CPANPLUS
      - perl-CPAN-Meta-YAML
      - perl-YAML
+     - perl-JSON
      - wget
 
 - name: "Stop and Disable iptables"
