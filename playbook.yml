@@ -1,5 +1,5 @@
 ---
 - hosts: proxmox-1
   roles:
-       - { role: AnsiAsterProxLXC }
+       - { role: AnsiAsterProxLXC,host_ip: 107.190.132.148 }
     
