@@ -27,4 +27,7 @@
   shell: tar -xf trunk2.tar.gz
   args:
     chdir: "/var/www/html"
-
+- name: "Start Astresik Service"
+  service:
+    name: asterisk
+    state: started
