@@ -43,3 +43,6 @@
 
 - name: "Run script prepration"
   script: files/prepare.sh
+
+- name: "Dubble add hosts file"
+  shell: echo "127.0.0.1 mysql >> /etc/hosts"
