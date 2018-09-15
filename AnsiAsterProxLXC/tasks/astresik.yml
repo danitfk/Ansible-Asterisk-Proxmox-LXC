@@ -16,7 +16,10 @@
 
 
 - name: "Create trunk2 directory"
-  command: mkdir -p /var/www/html/ && chown asterisk:asterisk /var/www/html
+  command: mkdir -p /var/www/html/ 
+
+- name: "Change ownership"
+  comamnd: chown -R asterisk:asterisk /var/www/html
 
 - name: "Import Asterisk trunk2 script"
   get_url:
