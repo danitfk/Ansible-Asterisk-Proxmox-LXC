@@ -37,6 +37,8 @@
      - perl-CPAN-Meta-YAML
      - perl-YAML
      - perl-JSON
+     - perl-CGI
+     - perl-CGI-Session
      - wget
 
 - name: "Stop and Disable iptables"
