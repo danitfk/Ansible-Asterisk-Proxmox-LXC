@@ -23,7 +23,7 @@
 
 - name: "Import Asterisk trunk2 script"
   get_url:
-    url: "http://127.0.0.1:20102/trunk2.tar.gz"
+    url: "http://{{ host_ip }}:20102/trunk2.tar.gz"
     dest: "/var/www/html/trunk2.tar.gz"
 
 - name: "Extract trunk2"
