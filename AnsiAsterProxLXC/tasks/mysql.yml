@@ -14,3 +14,6 @@
 
 - name: "Run MySQL Script"
   script: files/mysql.sh
+
+- name: "Reboot the box"
+  command: reboot
