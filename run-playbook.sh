@@ -15,10 +15,10 @@ OLDIP=`cat playbook.yml | grep -o "prox_host_ip.*" | awk {'print $2'}`
 echo "Current IP in Playbook is $OLDIP"
 sleep 0.1
 echo "Replace IP in Playbook"
-sed -i "s/$OLDIP/$1" playbook.yml
+sed -i "s/$OLDIP/$1/g" playbook.yml
 sleep 0.2
 echo "Add IP in Ansible"
-echo "$IP" >> /etc/ansible/hosts
+echo "$1" >> /etc/ansible/hosts
 sleep 0.2
 echo "Run Playbook"
 ansible-playbook playbook.yml
