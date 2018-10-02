@@ -11,7 +11,7 @@ else
 	fi
 echo "Detect current IP"
 sleep 0.4
-OLDIP=`cat playbook.yml | grep -o "prox_host_ip.*" | awk {'print $2'}`
+OLDIP=`cat playbook.yml | grep hosts | cut -d":" -f2 | sed 's/ //g'`
 echo "Current IP in Playbook is $OLDIP"
 sleep 0.1
 echo "Replace IP in Playbook"
