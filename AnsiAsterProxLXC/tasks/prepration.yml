@@ -40,6 +40,8 @@
      - perl-CGI
      - perl-CGI-Session
      - wget
+     - libxml2-devel
+     - sqlite-devel
 
 - name: "Stop and Disable iptables"
   service: name="iptables" state="stopped" enabled="no"
