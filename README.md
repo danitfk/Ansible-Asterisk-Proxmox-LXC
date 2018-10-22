@@ -1,3 +1,4 @@
+![Ansible Asterisk automated deployment](https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/Asterisk_Logo.svg/1200px-Asterisk_Logo.svg.png)
 # Asterisk Playbook
 
 A simple Ansible playbook to install Asterisk on server.
