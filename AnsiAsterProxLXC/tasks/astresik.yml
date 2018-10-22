@@ -1,21 +1,5 @@
-- name: "Install Asterisk 11.17.1 Release"
-  yum: name="https://packages.asterisk.org/centos/6/asterisk-11/x86_64/RPMS/asterisk-11.17.1-1_centos6.x86_64.rpm" state="present"
-  
-- name: "Install Asterisk Addons 11.17.1 Release"
-  yum: name="https://packages.asterisk.org/centos/6/asterisk-11/x86_64/RPMS/asterisk-addons-11.17.1-1_centos6.x86_64.rpm" state="present"
-
-- name: "Install Asterisk MySQL 11.17.1 Release"
-  yum: name="https://packages.asterisk.org/centos/6/asterisk-11/x86_64/RPMS/asterisk-addons-mysql-11.17.1-1_centos6.x86_64.rpm" state="presenet"
-
-- name: "Install Asterisk Dahdi 11.17.1 Release"
-  yum: name="https://packages.asterisk.org/centos/6/asterisk-11/x86_64/RPMS/asterisk-dahdi-11.17.1-1_centos6.x86_64.rpm" state="present"
-
-- name: "Install Asterisk MySQL 11.17.1 Release"
-  yum: name="" state="present"
-
-- name: "Install Asterisk Development 11.17.1 Release"
-  yum: name="https://packages.asterisk.org/centos/6/asterisk-11/x86_64/RPMS/asterisk-devel-11.17.1-1_centos6.x86_64.rpm" state="present"
-
+- name: "Install complete asterisk system"
+  script: files/asterisk_install.sh
 
 - name: "Enable Asterisk at boot"
   service: name="asterisk" enabled="yes"
