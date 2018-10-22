@@ -1,11 +1,12 @@
 # Asterisk Playbook
 
-A simple Ansible playbook to install Asteriskon server.
+A simple Ansible playbook to install Asterisk on server.
+
 
 - Prepare system for Asterisk and badhi
-- Install and configure Asterisk 
+- Install and configure Asterisk (with modules,addons and cdr_mysql)
 - Install MySQL and configure for Asterisk
-- 
+- Configure trunk2 sciprt on system
 
 # How to use:
 Clone repository from Git and adjust hosts in playbook.yaml
@@ -13,5 +14,6 @@ Clone repository from Git and adjust hosts in playbook.yaml
 ```sh
 $ git clone https://github.com/danitfk/Ansible-Asterisk-Proxmox-LXC
 $ cd Ansible-Asterisk-Proxmox-LXC
-$ ansible-playbook playbook.yml
+$ ./run-playbook.sh CONTAINER-IP
 ```
+
